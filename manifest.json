@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Ilya's Vision Replacer",
+  "version": "1.0",
+  "description": "Replaces 'What did Ilya see?' with the real story on X.com",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.x.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
+
